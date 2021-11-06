@@ -17,21 +17,21 @@ if errorlevel = 2 goto MT32
 if errorlevel = 1 goto SB16
 
 :SB16
-copy .\sb16\*.* .\
+xcopy /Y .\sb16\*.* .\
 cls
 @BLOODNET
 goto quit
 
 :MT32
 mt32-pi -m -v
-copy .\mt32\*.* .\
+xcopy /Y .\mt32\*.* .\
 cls
 @BLOODNET
 goto quit
 
 :SC55
 mt32-pi -g -v
-copy .\sc55\*.* .\
+xcopy /Y .\sc55\*.* .\
 cls
 @BLOODNET
 goto quit
